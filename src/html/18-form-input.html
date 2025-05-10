@@ -3,9 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>폼(input) 요소</title>
 </head>
 <body>
   <a href="/index.html">메인 페이지 이동</a><br />
+
+  <!--text : 텍스트 상자-->
+  <!--search : 검색어 상자-->
+
+  <!--폼 관련 요소는 모두 1대1로 대응되는 레이블을 가져야 함-->
+  <form action="POST">
+  <div>
+    <label for="userName">이름</label>
+    <input type="text" id="userName" name="userName"/>
+  </div>
+  <div>
+    <label for="searchKeyword">검색어</label>
+    <input type="search" id="searchKeyword" placeholder="검색어를 입력해주세요" name="keyword"/>
+  </div>
+  <div>
+    <label for="password">패스워드</label>
+    <input type="password" id="password" placeholder="비밀번호를 입력해주세요" name="password"/>
+  </div>
+  <div>
+    <input value="html" type="checkbox" name="기술스택" id="html" checked />
+    <label for="html">HTML</label>
+  </div>
+  <div>
+    <input value="css" type="checkbox" name="기술스택" id="CSS" />
+    <label for="CSS">CSS</label>
+  </div>
+  <div>
+    <label><input type="radio" name="조직" value="team1" checked/>아카츠키</label>
+  </div>
+
+  <div>
+    <label><input type="radio" name="조직" value="team2" />검은조직</label>
+  </div>
+
+  <div>
+    <label for="userEmail">이메일</label><input type="email" name="userEmail" id="userEmail" required/>
+  </div>
+  <div>
+    <input type="submit" value="전송" />
+    <input type="reset" value="초기화" />
+    <input type="button" value="버튼" />
+  </div>
+</form>
 </body>
 </html>
