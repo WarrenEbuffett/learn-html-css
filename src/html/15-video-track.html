@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>video 관련 요소</title>
 </head>
 <body>
   <a href="/index.html">메인 페이지 이동</a><br />
+
+  <video controls muted poster="/src/assets/video/poster.jpg">
+    <source src="/src/assets/video/google-developer-stories.mp4" type="video/mp4" />
+    <track src="/src/assets/video/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
+    <track src="/src/assets/video/stories-en.mov" kind="captions" srclang="ko" label="Korea Caption" />
+  </video>
 </body>
 </html>
