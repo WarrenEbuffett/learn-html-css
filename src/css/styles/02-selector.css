@@ -58,12 +58,14 @@ section {
   margin: 20px;
 }
 
-section::before {
-  content: "멋쟁이 사저처럼";
-  color: red;
+
+section::before{
+  content:"멋쟁이 사자처럼";
+  color:red;
 }
 
-section::after {
-  content: "프론트엔드 부트캠프";
+section::after{
+  content:"프론트엔드 부트캠프";
   color: green;
+
 }
